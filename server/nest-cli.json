@@ -1,0 +1,63 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/cats-api/src",
+  "monorepo": true,
+  "root": "apps/cats-api",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/cats-api/tsconfig.json"
+  },
+  "projects": {
+    "@app/cats-api": {
+      "type": "application",
+      "root": "apps/cats-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/cats-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/cats-api/tsconfig.json"
+      }
+    },
+    "@app/auth-api": {
+      "type": "application",
+      "root": "apps/auth-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth-api/tsconfig.json"
+      }
+    },
+    "@tools/eslint.config": {
+      "type": "library",
+      "root": "tools/eslint",
+      "entryFile": ".eslintrc.json",
+      "sourceRoot": "tools/eslint"
+    },
+    "@libs/modules": {
+      "type": "library",
+      "root": "libs/modules",
+      "entryFile": "index",
+      "sourceRoot": "libs/modules",
+      "compilerOptions": {
+        "tsConfigPath": "libs/modules/tsconfig.json"
+      }
+    },
+    "@libs/core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.json"
+      }
+    },
+    "@libs/utils": {
+      "type": "library",
+      "root": "libs/utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils/tsconfig.json"
+      }
+    }
+  }
+}

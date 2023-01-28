@@ -1,0 +1,20 @@
+# compiled output
+dist/
+
+# tests config
+tests/
+coverage/
+
+
+# js files
+.eslintrc.js
+*.js
+
+# dependencies
+node_modules/
+package-lock.json
+package.json
+
+# project config
+tsconfig.json
+tsconfig.build.json

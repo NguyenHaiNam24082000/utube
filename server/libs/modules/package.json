@@ -1,0 +1,32 @@
+{
+  "name": "@libs/modules",
+  "version": "v0.0.22",
+  "description": "monorepo modules libs",
+  "author": {
+    "name": "Nguyen Hai Nam",
+    "email": "nghainam2000@gmail.com"
+  },
+  "scripts": {
+    "format": "../../tools/eslint/node_modules/.bin/prettier --write \"**/*.{ts, js, json}\"",
+    "lint": "yarn format && ../../tools/eslint/node_modules/.bin/eslint \"**/*.{ts, js, json}\" --fix",
+    "test": "../../node_modules/jest/bin/jest.js --maxWorkers=50%"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@nestjs/config": "^2.2.0",
+    "axios": "^0.27.2",
+    "convert-pino-request-to-curl": "^0.0.28",
+    "pino": "^8.5.0",
+    "pino-http": "^8.2.0",
+    "pino-pretty": "^9.1.0",
+    "redis": "^4.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "pino-elasticsearch": "^6.2.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9"
+  }
+}

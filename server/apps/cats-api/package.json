@@ -1,0 +1,20 @@
+{
+  "name": "@app/cats.api",
+  "version": "v0.0.22",
+  "description": "monorepo cats-api",
+  "main": "main",
+  "scripts": {
+    "format": "../../tools/eslint/node_modules/.bin/prettier --write \"**/*.{ts, js, json}\"",
+    "test": "../../node_modules/jest/bin/jest.js --maxWorkers=50%",
+    "lint": "yarn format && ../../tools/eslint/node_modules/.bin/eslint \"src/**/*.{ts, js, json}\" --fix"
+  },
+  "author": {
+    "name": "Nguyen Hai Nam",
+    "email": "nghainam2000@gmail.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@tools/eslint.config",
+  "version": "v0.0.22",
+  "description": "monorepo eslint config",
+  "main": ".eslintrc.json",
+  "author": {
+    "name": "Nguyen Hai Nam",
+    "email": "nghainam2000@gmail.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-security": "^1.5.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-sonarjs": "^0.15.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
+    "prettier": "^2.7.1"
+  }
+}
