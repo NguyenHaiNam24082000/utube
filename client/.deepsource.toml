@@ -1,0 +1,20 @@
+version = 1
+
+exclude_patterns = [
+  "node_modules",
+  ".next",
+  ".github",
+  ".vscode",
+  "pnpm-lock.yaml"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["react"]
+
+[[transformers]]
+name = "prettier"
+enabled = true

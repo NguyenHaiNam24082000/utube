@@ -1,0 +1,5 @@
+{
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": false,
+  "cSpell.words": ["assemblyscript", "sonarjs"]
+}
